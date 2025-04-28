@@ -53,6 +53,7 @@ Rotary Angle Unit — brightness control
 Breadboard & jumper wires — prototyping setup
 
 
+<img width="740" alt="截屏2025-04-28 下午4 19 01" src="https://github.com/user-attachments/assets/b0033ea1-bf34-414d-8ce6-78fd2c3e3bcf" />
 
 
 
