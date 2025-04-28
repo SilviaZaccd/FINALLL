@@ -23,6 +23,7 @@ Additionally, **brightness control** is available via a **rotary angle unit** in
 - **Creatives** working at a desk
 - **Anyone** seeking ambient mood enhancement
 
+
 ---
 
 ## Concept Sketches
@@ -35,15 +36,12 @@ Additionally, **brightness control** is available via a **rotary angle unit** in
 
 ## 🛠️ Implementation
 
-### 🔌 Hardware (Electronics)
+### Process (Hand make)
 
-- **M5Stack AtomS3 Lite** — microcontroller
-- **NeoPixel 30-LED RGB strip** — colorful mood lighting
-- **360-degree Continuous Servo** — drives windmill head rotation
-- **IR Reflective Sensor** — detects user proximity
-- **Button (M5 Bottom)** — manual mode switch
-- **Rotary Angle Unit** — brightness control
-- **Breadboard & jumper wires** — prototyping setup
+
+<img width="280" alt="截屏2025-04-28 下午4 07 07" src="https://github.com/user-attachments/assets/2b3ba673-f26b-4f9b-973d-f8ab9b715deb" />
+<img width="295" alt="截屏2025-04-28 下午4 07 24" src="https://github.com/user-attachments/assets/cfe25ad5-42bf-4def-b62d-66470f3b3335" />
+<img width="280" alt="截屏2025-04-28 下午4 07 39" src="https://github.com/user-attachments/assets/9013bb7c-641d-4d75-8aef-93652ff6df6a" />
 
 
 
