@@ -8,6 +8,8 @@ It provides ambient emotional cues through **RGB lighting** and **servo-driven m
 - Home desks
 - Studio spaces
 - Private corners for students or creatives
+<img width="736" alt="截屏2025-04-28 下午3 55 08" src="https://github.com/user-attachments/assets/e0d7c596-345a-4dac-b6a1-5b7167a789cc" />
+
 
 Users can **switch between three emotional states** (Morning, Afternoon, Night) using **proximity (IR sensor)** or a **physical button**.  
 Additionally, **brightness control** is available via a **rotary angle unit** in certain modes.
@@ -20,7 +22,6 @@ Additionally, **brightness control** is available via a **rotary angle unit** in
 
 ## 🌟 Audience
 
-- **Students** / remote workers
 - **Creatives** working at a desk
 - **Anyone** seeking ambient mood enhancement
 
