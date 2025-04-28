@@ -35,7 +35,24 @@ Additionally, **brightness control** is available via a **rotary angle unit** in
 
 ---
 
-## 🛠️ Implementation
+## Implementation
+
+### Hardware
+M5Stack AtomS3 Lite — microcontroller
+
+NeoPixel 30-LED RGB strip — colorful mood lighting
+
+360-degree Continuous Servo — drives windmill head rotation
+
+IR Reflective Sensor — detects user proximity
+
+Button (M5 Bottom) — manual mode switch
+
+Rotary Angle Unit — brightness control
+
+Breadboard & jumper wires — prototyping setup
+
+
 
 ### Process (Hand make)
 
@@ -46,7 +63,7 @@ Additionally, **brightness control** is available via a **rotary angle unit** in
 
 
 
-### 🖥️ Software (ProtoPie)
+### Software (ProtoPie)
 
 - Receives `mode:0`, `mode:1`, `mode:2` via **UART**
 - Displays **animated icons + matching feedback**
