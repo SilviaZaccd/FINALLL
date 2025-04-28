@@ -22,6 +22,7 @@ Additionally, **brightness control** is available via a **rotary angle unit** in
 
 - **Creatives** working at a desk
 - **Anyone** seeking ambient mood enhancement
+<img width="761" alt="截屏2025-04-28 下午4 09 49" src="https://github.com/user-attachments/assets/6bf6d611-6ba4-46a9-86a1-0e6d542a6df6" />
 
 
 ---
