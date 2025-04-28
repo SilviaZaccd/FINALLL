@@ -1,127 +1,144 @@
-WindMood Presentation Overview
+# 🌟 WindMood — Interactive Desk Lamp
 
-Introduction
+## 📚 Introduction
 
-WindMood is an interactive emotional lighting prototype in the form of a windmill-inspired lamp. Designed for indoor desk use, it serves as an ambient emotional cue light, reflecting different moods through RGB lighting and windmill movement. The lamp is contextually placed in a cozy, private environment such as a home or studio desk, offering mood enhancement and emotional feedback to solo users, particularly students or creatives.
+**WindMood** is an interactive emotional lighting prototype shaped like a windmill-inspired lamp.  
+It provides ambient emotional cues through **RGB lighting** and **servo-driven movement**, designed for cozy environments like:
 
-The device allows the user to switch between three emotional states using proximity (IR sensor) or a physical button. Each state changes the color and behavior of the light and servo-driven windmill head. The user can also control brightness using a rotary angle unit.
+- Home desks
+- Studio spaces
+- Private corners for students or creatives
 
-Audience:
+Users can **switch between three emotional states** (Morning, Afternoon, Night) using **proximity (IR sensor)** or a **physical button**.  
+Additionally, **brightness control** is available via a **rotary angle unit** in certain modes.
 
-Students / remote workers
+![WindMood Overview](insert-overview-image-link-here)
 
-Creatives working at a desk
+---
 
-People seeking mood-based ambiance
+## 🌟 Audience
 
-Concept Sketches: Include 1-2 scanned sketches from Part 1 showing the windmill lamp design and initial hardware layout.
+- **Students** / remote workers
+- **Creatives** working at a desk
+- **Anyone** seeking ambient mood enhancement
 
-Implementation
+---
 
-Hardware (Electronics)
+## ✏️ Concept Sketches
 
-M5Stack AtomS3 Lite — microcontroller
+![Concept Sketch 1](insert-sketch1-link-here)
+![Concept Sketch 2](insert-sketch2-link-here)
 
-NeoPixel 30-LED RGB strip — visual output of mood states
+*(Early designs showing windmill form and hardware layout.)*
 
-360-degree Continuous Rotation Servo — animates the windmill head
+---
 
-IR Reflective Sensor — detects user proximity for mode switching
+## 🛠️ Implementation
 
-Button (M5 Bottom Button) — physical trigger to switch modes
+### 🔌 Hardware (Electronics)
 
-Angle Unit (Rotary potentiometer) — adjusts brightness in modes 0 and 1
+- **M5Stack AtomS3 Lite** — microcontroller
+- **NeoPixel 30-LED RGB strip** — colorful mood lighting
+- **360-degree Continuous Servo** — drives windmill head rotation
+- **IR Reflective Sensor** — detects user proximity
+- **Button (M5 Bottom)** — manual mode switch
+- **Rotary Angle Unit** — brightness control
+- **Breadboard & jumper wires** — prototyping setup
 
-Breadboard + jumper wires — for prototyping connections
+### 🧠 Firmware (MicroPython)
 
-Firmware (MicroPython Code)
+- **Inputs:** IR sensor, Button, Angle unit
+- **Outputs:** NeoPixel LEDs, Servo
+- **Libraries:** `PWM`, `ADC`, `UART`, `NeoPixel`
+- **Serial Communication:** UART → ProtoPie
+- **Modes:**
+  - **Morning (Mode 0):** White light + Angle brightness + Slow windmill
+  - **Afternoon (Mode 1):** Warm yellow light + Angle brightness + Medium speed
+  - **Night (Mode 2):** Breathing purple-blue + Fixed brightness + Very slow/stop windmill
 
-Inputs: IR sensor, button, angle knob
+### 🖥️ Software (ProtoPie)
 
-Outputs: RGB LED, servo
+- Receives `mode:0`, `mode:1`, `mode:2` via **UART**
+- Displays **animated icons + matching feedback**
 
-Modes:
+### 🏢 Enclosure & Mechanical Design
 
-Mode 0: Morning — White light, brightness via angle, servo slow
+- Designed in **Rhino 3D**
+- 3D-printed using **PLA**
+- Hollow tower with inner servo mounting system
+- Fan blades removable via top mounting
 
-Mode 1: Afternoon — Warm yellow light, brightness via angle, servo medium
+![WindMood Enclosure](insert-enclosure-photo-link-here)
 
-Mode 2: Night — Blue-purple breathing light, fixed brightness, servo nearly still
+---
 
-Code uses PWM, ADC, UART and NeoPixel libraries
+## 🔄 State Diagram
 
-UART is used to communicate with ProtoPie for live feedback visuals
+![WindMood State Diagram](insert-state-diagram-image-link-here)
 
-Software (ProtoPie)
-
-Receives serial data (mode:0, mode:1, mode:2) via UART
-
-Shows mode icon, label, and animated feedback in the app interface
-
-Enclosure & Mechanical Design
-
-Modeled in Rhino and sliced for 3D printing
-
-Form resembles a modern windmill with a base, body, and removable blade head
-
-Printed in PLA and hand-assembled
-
-Servo placed horizontally inside the top with custom axle to spin fan blades
-
-State Diagram
-
+```plaintext
 [Power ON]
-   |
+    ↓
 [Idle Mode]
-   |-- (IR or Button Trigger) --> [Mode 0 - Morning]
-   |         - White Light
-   |         - Brightness via Angle Unit
-   |         - Servo Slow
-   |-- (Trigger again) --> [Mode 1 - Afternoon]
-   |         - Warm Yellow
-   |         - Brightness via Angle
-   |         - Servo Medium
-   |-- (Trigger again) --> [Mode 2 - Night]
-   |         - Breathing Blue-Purple
-   |         - Fixed Brightness
-   |         - Servo 74 (slow/static)
-   |
-   +-- (Loop)
+    ↓ (IR detected / Button pressed)
+[Morning Mode - White Light]
+    ↓
+[Afternoon Mode - Warm Light]
+    ↓
+[Night Mode - Breathing Purple/Blue]
+    ↓
+(Loop back)
+```
 
-Hardware Code: All logic on the ATOM S3 board.Software Feedback: UI state reflects current mode:X sent via UART to ProtoPie.
+- **Hardware Code:** IR detection + Button input + Servo control + LED output
+- **Software Feedback:** Mode update shown on ProtoPie App
 
-Hardware List
+---
 
-M5Stack AtomS3 Lite
+## ⚙️ Hardware List
 
-NeoPixel RGB LED strip (30 LEDs)
+- M5Stack AtomS3 Lite
+- NeoPixel 30-LED strip
+- 360-degree Servo
+- IR Reflective Sensor
+- Rotary Angle Unit
+- Bottom Button
+- Breadboard + Jumpers
 
-360-degree servo motor
+---
 
-IR reflective sensor (input)
+## 🪛 Wiring Overview
 
-Rotary angle unit
+| Component         | Connection  |
+|-------------------|--------------|
+| Servo             | Pin 38 (PWM) |
+| IR Sensor         | Pin 1 (ADC)  |
+| Angle Unit        | Pin 6 (ADC)  |
+| NeoPixel LEDs     | Pin 7        |
+| Button            | Pin 41       |
 
-Button (on M5 Bottom)
+![Wiring Diagram](insert-wiring-diagram-link-here)
 
-Breadboard, jumper wires, USB-C cable
+---
 
-Wiring Diagram
+## 🧰 Firmware Key Logic
 
-Include labeled photo or diagram showing:
+```python
+# Switch mode on IR or button
+# Adjust brightness via angle (modes 0/1)
+# Update NeoPixel colors accordingly
+# Control servo speed for each mode
+# Send mode info over UART to ProtoPie
+```
 
-Servo → Pin 38 (PWM)
+---
 
-IR sensor → Pin 1 (ADC)
+## 🚀 Final Note
 
-Angle unit → Pin 6 (ADC)
+WindMood demonstrates a playful, intuitive way to integrate **physical interaction** with **digital feedback**  
+in a personalized, everyday object. ✨
 
-NeoPixel → Pin 7 (Digital)
+---
 
-Button → Pin 41 (Digital)
+*(Remember to replace all `insert-...-link-here` with your actual image uploads.)*
 
-Firmware Code
-
-Include uploaded main.py code file separately.
-
-Key Logic Explanation:
