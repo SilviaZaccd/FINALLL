@@ -75,6 +75,9 @@ Breadboard & jumper wires — prototyping setup
 <img width="280" alt="截屏2025-04-28 下午4 07 39" src="https://github.com/user-attachments/assets/9013bb7c-641d-4d75-8aef-93652ff6df6a" />
 
 
+<img width="677" alt="截屏2025-04-28 下午4 22 24" src="https://github.com/user-attachments/assets/a4ca343f-589b-46cf-9694-c9f8847531af" />
+
+
 ---
 
 ## 🚀 Final Note
