@@ -70,28 +70,14 @@ Breadboard & jumper wires — prototyping setup
 <img width="295" alt="截屏2025-04-28 下午4 07 24" src="https://github.com/user-attachments/assets/cfe25ad5-42bf-4def-b62d-66470f3b3335" />
 <img width="280" alt="截屏2025-04-28 下午4 07 39" src="https://github.com/user-attachments/assets/9013bb7c-641d-4d75-8aef-93652ff6df6a" />
 
-
-
-### Software (ProtoPie)
-
-- Receives `mode:0`, `mode:1`, `mode:2` via **UART**
-- Displays **animated icons + matching feedback**
-
+---
 
 ## State Diagram （How my interactive prototype should behave）
 
 <img width="4032" alt="Core project Ideation+ Research" src="https://github.com/user-attachments/assets/e32e721b-86ee-4dc2-8a3f-27ea4f464937" />
 
-
-
 ---
 
 ## 🚀 Final Note
 
-WindMood demonstrates a playful, intuitive way to integrate **physical interaction** with **digital feedback**  
-in a personalized, everyday object. ✨
-
----
-
-*(Remember to replace all `insert-...-link-here` with your actual image uploads.)*
 
