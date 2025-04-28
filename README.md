@@ -55,8 +55,14 @@ Breadboard & jumper wires — prototyping setup
 
 <img width="740" alt="截屏2025-04-28 下午4 19 01" src="https://github.com/user-attachments/assets/b0033ea1-bf34-414d-8ce6-78fd2c3e3bcf" />
 
+---
+### Build 3d Modle 
+
+![8501745881428_ pic](https://github.com/user-attachments/assets/fad4b70b-b7fe-4ec7-b425-6d0aa3c64660)
+![8491745881417_ pic](https://github.com/user-attachments/assets/b41ff494-f206-4c6a-b832-119ea1d53677)
 
 
+---
 ### Process (Hand make)
 
 
