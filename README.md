@@ -1,4 +1,4 @@
-# 🌟 WindMood — Interactive Desk Lamp
+# WindMood — Interactive Desk Lamp
 
 ## 📚 Introduction
 
