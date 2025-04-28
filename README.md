@@ -51,16 +51,6 @@ Additionally, **brightness control** is available via a **rotary angle unit** in
 - Receives `mode:0`, `mode:1`, `mode:2` via **UART**
 - Displays **animated icons + matching feedback**
 
-### 🏢 Enclosure & Mechanical Design
-
-- Designed in **Rhino 3D**
-- 3D-printed using **PLA**
-- Hollow tower with inner servo mounting system
-- Fan blades removable via top mounting
-
-![WindMood Enclosure](insert-enclosure-photo-link-here)
-
----
 
 ## State Diagram （How my interactive prototype should behave）
 
