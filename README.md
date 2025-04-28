@@ -61,7 +61,7 @@ Additionally, **brightness control** is available via a **rotary angle unit** in
 
 ---
 
-## 🔄 State Diagram
+## State Diagram （How my interactive prototype should behave）
 
 <img width="4032" alt="Core project Ideation+ Research" src="https://github.com/user-attachments/assets/e32e721b-86ee-4dc2-8a3f-27ea4f464937" />
 
