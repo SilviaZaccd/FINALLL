@@ -27,10 +27,9 @@ Additionally, **brightness control** is available via a **rotary angle unit** in
 
 ## Concept Sketches
 
-![Concept Sketch 1](insert-sketch1-link-here)
-![Concept Sketch 2](insert-sketch2-link-here)
+<img width="623" alt="截屏2025-04-28 下午4 01 31" src="https://github.com/user-attachments/assets/9257101a-a012-4be4-a3f8-011bd6bc8f78" />
 
-*(Early designs showing windmill form and hardware layout.)*
+
 
 ---
 
