@@ -12,7 +12,9 @@ It provides ambient emotional cues through **RGB lighting** and **servo-driven m
 Users can **switch between three emotional states** (Morning, Afternoon, Night) using **proximity (IR sensor)** or a **physical button**.  
 Additionally, **brightness control** is available via a **rotary angle unit** in certain modes.
 
-![WindMood Overview](insert-overview-image-link-here)
+<img width="4032" alt="Core project Ideation+ Research" src="https://github.com/user-attachments/assets/e32e721b-86ee-4dc2-8a3f-27ea4f464937" />
+
+
 
 ---
 
