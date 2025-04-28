@@ -22,14 +22,14 @@ Additionally, **brightness control** is available via a **rotary angle unit** in
 
 ---
 
-## 🌟 Audience
+## Audience
 
 - **Creatives** working at a desk
 - **Anyone** seeking ambient mood enhancement
 
 ---
 
-## ✏️ Concept Sketches
+## Concept Sketches
 
 ![Concept Sketch 1](insert-sketch1-link-here)
 ![Concept Sketch 2](insert-sketch2-link-here)
