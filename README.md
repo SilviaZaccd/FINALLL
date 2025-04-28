@@ -1,6 +1,6 @@
 # WindMood — Interactive Desk Lamp
 
-## 📚 Introduction
+## Introduction
 
 **WindMood** is an interactive emotional lighting prototype shaped like a windmill-inspired lamp.  
 It provides ambient emotional cues through **RGB lighting** and **servo-driven movement**, designed for cozy environments like:
